@@ -207,7 +207,7 @@ int ampersant = 0;
 // bufsize = 16;
 // pos = 0;
 
-char *get_zasheku(char *buffer) {
+char *get_buf(char *buffer) {
 	char ch = getchar();
 	while ((ch != '\n')) {
 		if (pos >= bufsize) {
@@ -233,7 +233,7 @@ int main(int argc, char **argv) {
 	char *buffer = malloc(bufsize * sizeof(char));
 	shell_print();
 
-	while (strcmp(get_zasheku(buffer), "exit") != 0) {
+	while (strcmp(get_buf(buffer), "exit") != 0) {
 
 		if(pre_ch == '&' && ampersant)
 		{
