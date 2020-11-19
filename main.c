@@ -61,7 +61,6 @@ void clearlist(List head) {
 		free(t);
 	}
 }
-// че за *****?
 int filter(char **buffer) {
 	char *old_buffer = *buffer;
 	int new_buf_size = 16;
